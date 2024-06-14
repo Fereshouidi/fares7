@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Travel input data</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/style2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="header-parent">
+    <header>
+      <a href="#" class="logo">Travel</a>
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="#about">buy a ticket</a>
+        <a href="index.html#container-parent_home">About</a>
+        <a href="index.html#contact_section">Contact</a>
+      </nav>
+      <i onclick="ul_control()" id="menuIcon" class="fas fa-bars"></i>
+    </header>
+    <ul id="menuList"> 
+      <li class="li" ><a class="a" href="index.html">Home</a></li>
+      <li class="li" ><a class="a" href="input_data.html">buy a ticket</a></li>
+      <li class="li" ><a class="a" href="index.html#container-parent_home">About</a></li>
+      <li class="li" ><a class="a" href="index.html#contact_section">Contact</a></li>
+    </ul>
+    
+  </div>
+ 
+
+  
+  <br/><br/><br/>
+  <div class="new-body" >
+
+
+   
+
+    <section id="section-1" class="section-1" >
+      <div class="container-parent">
+
+          <a  class="back-btn" id="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>back
+          </a>
+
+
+      <p id="show"></p>
+      </div>
+    </section>
+
+
+    
+    <section id="section-2" class="section-2">
+  
+      <div class="container-parent">
+        <div class="container" id="special" >
+          <i class="fa-solid fa-user"></i>
+          <input id="full-name" type="text" placeholder="Full Name ..">
+        </div>
+        <div id="age_c" class="container">
+          <i class="fas fa-hourglass-half"></i>
+          <input id="age" type="number" placeholder="Age ..">
+        </div>
+        <div id="purpose_c" class="container">
+          <i class="fas fa-plane"></i>
+            <select id="purpose" >
+              <option value="">purpose of trip</option>
+              <option value="tourist">tourist</option>
+              <option value="business_trip">business trip</option>
+              <option value="study_abroad">study abroad</option>
+              <option value="relocation">relocation</option>
+          </select>
+        </div>
+        <div id="duration_c" class="container">
+          <i class="fas fa-clock"></i>
+            <select id="duration" >
+            <option value="">duration of trip</option>
+            <option value="one_week">one week</option>
+            <option value="two_week">two week</option>
+            <option value="one_mounth">one mounth</option>
+            <option value="three_mounth">three mounth</option>
+          </select>
+        </div>
+        <div id="academic-level_c" class="container">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <select id="academic-level" type="text" placeholder="Academic level ..">
+            <option value="">Academic level ..</option>
+            <option value="Primary_school">Primary school</option>
+            <option value="middle_school">middle School</option>
+            <option value="high_school">High school</option>
+            <option value="university">University</option>
+
+          </select>
+        </div>
+        <div id="specialization_c" class="container">
+          <i class="fas fa-user-graduate"></i>
+          <select id="specialization" >
+            <option value="">Specialization ..</option>
+            <option value="programmer">programmer</option>
+            <option value="doctor">doctor</option>
+            <option value="engineer">engineer</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+        <div class="container" id="the_other_c" >
+          <i class="fa-solid fa-user-graduate"></i>
+          <input id="the_other_specialization" type="text" placeholder="your other Specialization ..">
+        </div>
+        <div class="container" id="company_name_c" >
+          <i class="fa-solid fa-building"></i>
+          <input id="company_name" type="text" placeholder="company name ..">
+        </div>
+        <div id="precedents_c" class="container">
+          <i class="fas fa-gavel"></i>
+            <select id="precedents" >
+            <option value="">Criminal records ..</option>
+            <option value="less_than_one_year">less than one year</option>
+            <option value="between_one_and_5_years">between one and 5 years</option>
+            <option value="more_than_5_years">more than 5 years</option>
+              <option value="">never</option>
+          </select>
+        </div>
+        
+        
+        
+        
+
+        <div class="btn-div" style="flex: 100%;">
+          <button id="btn_showData" class="btn">check</button>
+        <div>
+
+
+      </div>
+
+          <!-- <p id="show"></p> -->
+
+    </section>
+
+
+  </div>
+
+
+          <!-- <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+ -->
+
+
+    <script type="module" src="scripts/script.js"></script>
+
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
